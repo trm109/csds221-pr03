@@ -16,7 +16,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 library.add(faUserSecret)
 library.add(faHeartPulse)
 library.add(faEnvelope)
-createApp(App).component('font-awesome-icon', FontAwesomeIcon)
+createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon)
 .mount('#app')
 
 import "bootstrap/dist/js/bootstrap.js"
+import router from './router'
